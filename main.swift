@@ -90,7 +90,7 @@ while jogando == true{
         
         func tentaCurar(v: Int, vm: Int, c: Int) -> Int{
             var vida = v
-            if v + c > vm{
+            if v + c >= vm{
                 vida = vm
             }else{
                 vida = v + c
