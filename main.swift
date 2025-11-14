@@ -19,7 +19,7 @@ var menu = true
 var jogador = (vida: 100, maxVida: 100)
 
 let listaMagias = ["raio simples", "cura menor", "tiro acido", "cura melhorada", "bola de fogo", "alta cura", "super nova"]
-let listaMagiasStats = [15, 15, 25, 30, 40, 40, 50]
+let listaMagiasStats = [15, 30, 25, 50, 40, 70, 50]
 let listaMagiasTipo = [
     "raio simples": "dano",
     "cura menor": "cura",
@@ -182,6 +182,8 @@ while jogando == true{
         let jogarDNV = readLine()
         if jogarDNV == "2"{
             jogando = false
+            break
+        }else{
             break
         }
     }
