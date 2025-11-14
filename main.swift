@@ -54,7 +54,7 @@ func verificaMagia(x:Int) throws -> String{
         throw erros.opcaoInvalida
     }
     if x - 1 > magiasAprendidas{
-        return "opção invalida"
+        throw erros.opcaoInvalida
     }
     else{
         return "voce usou \(listaMagias[x - 1])"
